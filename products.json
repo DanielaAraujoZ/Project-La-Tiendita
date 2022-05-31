@@ -1,0 +1,97 @@
+{
+    "Ofertas":[
+        {
+            "name": "Limon con semilla",
+            "image": "https://i.ibb.co/0j7jp3w/Limon.png",
+            "priceInitial": "39.9",
+            "priceDiscount": "26.82",
+            "percentageDiscount" : "32"
+        },
+        {
+            "name": "Tomate",
+            "image": "https://i.ibb.co/NVGh7RQ/Tomate.png",
+            "priceInitial": "32.9",
+            "priceDiscount": "21.79",
+            "percentageDiscount" : "32"
+        },
+        {
+            "name": "Aguacate Hass",
+            "image": "https://i.ibb.co/FDYsJWM/Aguacate-Hass.png",
+            "priceInitial": "69.9",
+            "priceDiscount": "56.8",
+            "percentageDiscount" : "18"
+        },
+        {
+            "name": "Nopal Limpio",
+            "image": "https://i.ibb.co/7yhfQN7/Nopal-Limpio.png",
+            "priceInitial": "29.9",
+            "priceDiscount": "25.8",
+            "percentageDiscount" : "13"
+        },
+        {
+            "name": "Tomate verde sin cascara",
+            "image": "https://i.ibb.co/YQvP0xF/Tomate-verde.png",
+            "priceInitial": "24.9",
+            "priceDiscount": "22.89",
+            "percentageDiscount" : "8"
+        },
+        {
+            "name": "Coca-cola sin azucar",
+            "image": "https://i.ibb.co/37bKqfp/coca-cola-sin-azucar.jpg",
+            "priceInitial": "28",
+            "priceDiscount": "26",
+            "percentageDiscount" : "7"
+        },
+        {
+            "name": "Coca-cola",
+            "image": "https://i.ibb.co/Kzcdzx8/coca-cola-original.jpg",
+            "priceInitial": "14",
+            "priceDiscount": "12.9",
+            "percentageDiscount" : "7"
+        }
+    ],
+    "Los mas populares":[
+        {
+            "name": "San Rafael pechuga de pavo",
+            "image": "https://i.ibb.co/KzZfw4w/Pechuga-pavo.png",
+            "price": "62.5",
+            "weight": "250g",
+            "pricePerGram" : "0.25/gr"
+        },
+        {
+            "name": "Bimbo Pan Blanco Grande",
+            "image": "https://i.ibb.co/JKYzBX0/Pan-Bimbo.png",
+            "price": "38.9",
+            "weight": "680g",
+            "pricePerGram" : "0.6/gr"
+        },
+        {
+            "name": "Mc Cormick Mayonesa",
+            "image": "https://i.ibb.co/0s6YjJM/Mayonesa.png",
+            "price": "48.5",
+            "weight": "507g",
+            "pricePerGram" : "0.1/gr"
+        },
+        {
+            "name": "Colgate Pasta Dental Triple Familiar 2 U",
+            "image": "https://i.ibb.co/jbjtSGW/Colgate.png",
+            "price": "35.5",
+            "weight": "125ml",
+            "pricePerGram" : "0.28/ml"
+        },
+        {
+            "name": "Huevos San Juan",
+            "image": "https://i.ibb.co/64qXZ6g/Huevos.png",
+            "price": "37.5",
+            "weight": "18 Und",
+            "pricePerGram" : "2.08/u"
+        },
+        {
+            "name": "Fabuloso Limpaidor Antibacterial",
+            "image": "https://i.ibb.co/wQHG35y/Name-Fabuloso.jpg",
+            "price": "26/kg",
+            "weight": "2L",
+            "pricePerGram" : "18.95/l"
+        }
+    ]
+}

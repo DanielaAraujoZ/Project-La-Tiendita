@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "json-server": "^0.17.0"
+  },
+  "name": "proyecto",
+  "description": "**En este proyecto buscamos que logres evidenciar tus conceptos avanzados de fundamentos web,haciendo uso de HTML, CSS e implementando JavaScript moderno. Además que sustentar los conocimientod adquiridos haciendo uso de marcos de trabajo CSS, implementación de preprocesadores y realizar páginas interactivas con JavaScript vanilla integrando Webpack y Babel**",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

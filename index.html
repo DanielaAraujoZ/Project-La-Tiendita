@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/styles/input.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>La Tiendita App</title>
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <img src="./Icons-Images/Tiendita.png" alt="Tiendita-icon">
+            <div class="ubication-cart">
+                <button class="icon-ubication" type="button" data-bs-toggle="modal" data-bs-target="#ubicationModal">
+                    <img src="./Icons-Images/Ubication-button.png" alt="Ubication-button">
+                    <span class="city"> México City Marriott Reforma Hotel...  </span>
+                </button>
+                <div class="container-shopping-cart">
+                    <img src="./Icons-Images/Shopping-cart-icon.svg" alt="">
+                    <span>1</span>
+                </div>
+            </div>
+            <div class="modal fade" id="ubicationModal" tabindex="-1" aria-labelledby="ubicationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-title">
+                            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close"><img src="./Icons-Images/cancel.png" alt=""></button>
+                            <p> ¿Dónde quieres recibir tu pedido? </p>
+                        </div>
+                        <div class="modal-body">
+                            <p>Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección</p>
+                            <img src="./Icons-Images/location.png" alt="location-city" class="icon-location">
+                            <select name="select-city" id="select-cities">
+                                <option value="value1">  México City Marriott Reforma Hotel</option>
+                                <option value="value2">México City International Airport</option>
+                                <option value="value3">México City Mexico</option>
+                            </select>
+                            <button class="button-add">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-banner">
+            <img src="./Icons-Images/banner.png" alt="banner">
+            <p>¡Adquiere todos tus productos favoritos al mejor precio!</p>
+        </div>
+        <div class="container-products">
+            <div class="container-offers">
+                <p> Ofertas </p>
+                <div class="products-offers"></div>
+            </div>
+            <div class="container-popular">
+                <p> Los más populares </p>
+                <div class="products-popular" id="popular"></div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./src/scripts/index.js" type="module"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</html>

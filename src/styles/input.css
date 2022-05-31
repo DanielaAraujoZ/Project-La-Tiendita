@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  width: 100%;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem; }
+
+header {
+  width: 100%; }
+  header .container-header {
+    width: 90%;
+    height: 3rem;
+    margin: 2rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container-header img {
+      height: 50%; }
+    header .container-header .ubication-cart {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 40%;
+      cursor: pointer; }
+      header .container-header .ubication-cart .icon-ubication {
+        border: none;
+        background-color: transparent; }
+      header .container-header .ubication-cart .city {
+        margin: 0;
+        font-weight: 700;
+        border-right: 1px solid #B8B4B4;
+        padding: 0.5rem;
+        color: #332927; }
+      header .container-header .ubication-cart .container-shopping-cart {
+        background-color: #0AC763;
+        width: 70px;
+        height: 32px;
+        border-radius: 0.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem; }
+        header .container-header .ubication-cart .container-shopping-cart img {
+          height: 23px; }
+        header .container-header .ubication-cart .container-shopping-cart span {
+          color: #FEFEFE;
+          font-weight: .8rem; }
+    header .container-header .modal {
+      font-family: "Poppins", sans-serif; }
+      header .container-header .modal .modal-content {
+        padding: 2rem; }
+        header .container-header .modal .modal-content .modal-title {
+          display: flex;
+          flex-direction: column; }
+          header .container-header .modal .modal-content .modal-title .button-close {
+            width: 10%;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            align-self: end; }
+          header .container-header .modal .modal-content .modal-title p {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #333333; }
+        header .container-header .modal .modal-content .modal-body {
+          padding: 0;
+          min-height: 0;
+          position: relative; }
+        header .container-header .modal .modal-content p {
+          font-size: 0.8rem;
+          font-weight: 400;
+          min-height: auto;
+          font-family: "Poppins", sans-serif;
+          margin: 1rem 0 0; }
+        header .container-header .modal .modal-content .icon-location {
+          position: relative;
+          top: 2.2rem;
+          right: -1rem; }
+        header .container-header .modal .modal-content select {
+          width: 100%;
+          border: 1px solid #B8B4B4;
+          border-radius: 0.5rem;
+          padding: 0.75rem;
+          background-color: transparent;
+          padding-left: 3rem;
+          margin-bottom: 1rem; }
+        header .container-header .modal .modal-content .button-add {
+          width: 100%;
+          height: 2.5rem;
+          background-color: #0AC763;
+          border: none;
+          border-radius: 0.5rem;
+          color: #FEFEFE;
+          font-size: 1rem;
+          cursor: pointer; }
+
+main {
+  width: 100%; }
+  main .container-banner {
+    width: 90%;
+    margin: 4rem auto;
+    position: relative; }
+    main .container-banner img {
+      width: 100%; }
+    main .container-banner p {
+      position: absolute;
+      top: 6rem;
+      width: 100%;
+      text-align: center;
+      color: #FEFEFE;
+      font-size: 1.75rem;
+      font-weight: 600; }
+  main .container-products {
+    width: 90%;
+    margin: auto; }
+    main .container-products .container-offers p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #333333; }
+    main .container-products .container-offers .products-offers {
+      display: flex;
+      gap: 2rem;
+      overflow-x: scroll;
+      padding: 2rem 0;
+      margin: 2rem 0; }
+      main .container-products .container-offers .products-offers .product-offer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 26rem; }
+        main .container-products .container-offers .products-offers .product-offer .container-image {
+          max-height: 12rem; }
+          main .container-products .container-offers .products-offers .product-offer .container-image img {
+            width: 12rem;
+            height: 12rem; }
+        main .container-products .container-offers .products-offers .product-offer .discount {
+          background-color: #F0E3FE;
+          color: #5E18BB;
+          width: 35%;
+          text-align: center;
+          border-radius: 1rem;
+          font-size: 0.75rem;
+          padding: 0.25rem; }
+        main .container-products .container-offers .products-offers .product-offer .price {
+          color: #332927;
+          font-size: 1rem; }
+          main .container-products .container-offers .products-offers .product-offer .price .price-discount {
+            color: #BDBCBC;
+            text-decoration: line-through; }
+        main .container-products .container-offers .products-offers .product-offer .name-product {
+          font-size: 0.8rem;
+          font-weight: 400;
+          min-height: auto;
+          font-family: "Poppins", sans-serif;
+          min-height: 5rem; }
+        main .container-products .container-offers .products-offers .product-offer .button-add {
+          width: 100%;
+          height: 2.5rem;
+          background-color: #0AC763;
+          border: none;
+          border-radius: 0.5rem;
+          color: #FEFEFE;
+          font-size: 1rem;
+          cursor: pointer; }
+    main .container-products .container-popular p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #333333; }
+    main .container-products .container-popular .products-popular {
+      display: flex;
+      gap: 2rem;
+      overflow-x: scroll;
+      padding: 2rem 0;
+      margin: 2rem 0; }
+      main .container-products .container-popular .products-popular .product-popular {
+        width: 12rem;
+        display: flex;
+        flex-direction: column; }
+      main .container-products .container-popular .products-popular .price {
+        color: #332927;
+        font-size: 1rem; }
+      main .container-products .container-popular .products-popular .name-product {
+        font-size: 0.8rem;
+        font-weight: 400;
+        min-height: auto;
+        font-family: "Poppins", sans-serif;
+        min-height: 5rem; }
+      main .container-products .container-popular .products-popular .info-price {
+        font-size: .75rem;
+        color: #B8B4B4;
+        font-weight: 400; }
+      main .container-products .container-popular .products-popular .button-add {
+        width: 100%;
+        height: 2.5rem;
+        background-color: #0AC763;
+        border: none;
+        border-radius: 0.5rem;
+        color: #FEFEFE;
+        font-size: 1rem;
+        cursor: pointer; }
+
+.products-offers::-webkit-scrollbar, .products-popular::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem; }
+
+.products-offers::-webkit-scrollbar-track, .products-popular::-webkit-scrollbar-track {
+  background-color: #FEFEFE; }
+
+.products-offers::-webkit-scrollbar-thumb, .products-popular::-webkit-scrollbar-thumb {
+  border-radius: .25rem;
+  background-color: #BDBCBC; }
+
+.modalItem .modal {
+  width: 100%; }
+  .modalItem .modal .modal-dialog {
+    max-width: 75%; }
+    .modalItem .modal .modal-dialog .modal-content {
+      padding: 2rem 3rem; }
+      .modalItem .modal .modal-dialog .modal-content .button-close {
+        width: 10%;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        align-self: end;
+        width: 5%; }
+      .modalItem .modal .modal-dialog .modal-content .modal-body .product-info {
+        display: flex; }
+        .modalItem .modal .modal-dialog .modal-content .modal-body .product-info img {
+          width: 50%;
+          object-fit: cover; }
+        .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .name-product {
+            color: #332927;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-size: 1.75rem;
+            min-height: auto; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .paragraph {
+            font-size: 0.8rem;
+            font-weight: 400;
+            min-height: auto;
+            font-family: "Poppins", sans-serif; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .description {
+            font-size: 0.8rem;
+            font-weight: 400;
+            min-height: auto;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+            min-height: 5rem; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .select-text {
+            font-size: 1rem;
+            font-weight: 700; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info select {
+            width: 100%;
+            border: 1px solid #B8B4B4;
+            border-radius: 0.5rem;
+            padding: 0.75rem;
+            background-color: transparent;
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+            padding-left: .75rem; }
+          .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .increase-amount {
+              width: 45%;
+              height: 100%;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: .5rem;
+              box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+              border-radius: .5rem; }
+              .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .increase-amount img {
+                width: 10%; }
+              .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .increase-amount p {
+                margin: 0; }
+              .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .increase-amount .button-increase, .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .increase-amount .button-decrease {
+                border: none;
+                background-color: transparent;
+                cursor: pointer; }
+            .modalItem .modal .modal-dialog .modal-content .modal-body .product-info .info .add-details-product .button-add {
+              width: 45%; }
+
+/*# sourceMappingURL=input.css.map */
