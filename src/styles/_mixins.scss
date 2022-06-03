@@ -58,3 +58,40 @@
     padding-left: 3rem;
     margin-bottom: 1rem
 }
+
+@mixin increase-amount {
+    width: 45%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    box-shadow: 0px 11px 29px rgba(0, 0, 0, 0.05);
+    border-radius: .5rem;
+    font-weight: 700;
+}
+
+@mixin button-amount {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@mixin design-card-item{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $Bg-card-item;
+    padding: 1rem 1.5rem;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+}
+
+@mixin input-form{
+    width: 90%;
+    height: 30px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid $Boulder;
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.04);;
+}

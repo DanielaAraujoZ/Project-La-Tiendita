@@ -1,0 +1,71 @@
+.modalItem{
+    .modal{
+        width: 100%;
+        .modal-dialog{
+            max-width: 75%;
+            .modal-content{
+                padding: 2rem 3rem;
+                background-color: $Bg-purple;
+                .button-close{
+                    @include button-close;
+                    width: 5%;
+                }
+                .modal-body{
+                    .product-info{
+                        display: flex;
+                        img{
+                            width: 50%;
+                            object-fit: cover
+                        }
+                        .info{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            .name-product{
+                                @include title-product;
+                                font-size: 1.75rem;
+                                min-height: auto;
+                            }
+                            .paragraph{
+                                @include paragraph;
+                            }
+                            .description{
+                                @include paragraph;
+                                font-size: 1rem;
+                                min-height: 5rem;
+                            }
+                            .select-text{
+                                font-size: 1rem;
+                                font-weight: 700;
+                            }
+                            select{
+                                @include select;
+                                padding-left: .75rem;
+                            }
+                            .add-details-product{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                .increase-amount{
+                                    @include increase-amount;
+                                    img{
+                                        width: 10%;
+                                    }
+                                    p{
+                                        margin: 0;
+                                    }
+                                    .button-increase, .button-decrease{
+                                        @include button-amount
+                                    }
+                                }
+                                .button-add{
+                                    width: 45%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

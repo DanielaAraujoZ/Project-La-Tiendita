@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/payPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <main>
+        <a href="../index.html">
+            <img src="../Icons-Images/back.png" alt="button-back">
+            <p>Volver</p>
+        </a>
+        <div class="main-content">
+            <div class="products-list">
+                <div class="product-item">
+                    <div class="item-image-text">
+                        <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                        <div class="item-text">
+                            <p>Limon con semilla</p>
+                            <p>$39.9</p>
+                        </div>
+                    </div>
+                    <div class="increase-amount">
+                        <img class="button-increase" src="../Icons-Images/icon-less.png" alt="">
+                        <p id="gram-product${id}">250gr</p>
+                        <img class="button-decrease" src="../Icons-Images/icon-sum.png" alt="">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-image-text">
+                        <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                        <div class="item-text">
+                            <p>Limon con semilla</p>
+                            <p>$39.9</p>
+                        </div>
+                    </div>
+                    <div class="increase-amount">
+                        <img class="button-increase" src="../Icons-Images/icon-less.png" alt="">
+                        <p id="gram-product${id}">250gr</p>
+                        <img class="button-decrease" src="../Icons-Images/icon-sum.png" alt="">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-image-text">
+                        <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                        <div class="item-text">
+                            <p>Limon con semilla</p>
+                            <p>$39.9</p>
+                        </div>
+                    </div>
+                    <div class="increase-amount">
+                        <img class="button-increase" src="../Icons-Images/icon-less.png" alt="">
+                        <p id="gram-product${id}">250gr</p>
+                        <img class="button-decrease" src="../Icons-Images/icon-sum.png" alt="">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-image-text">
+                        <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                        <div class="item-text">
+                            <p>Limon con semilla</p>
+                            <p>$39.9</p>
+                        </div>
+                    </div>
+                    <div class="increase-amount">
+                        <img class="button-increase" src="../Icons-Images/icon-less.png" alt="">
+                        <p id="gram-product${id}">250gr</p>
+                        <img class="button-decrease" src="../Icons-Images/icon-sum.png" alt="">
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="item-image-text">
+                        <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                        <div class="item-text">
+                            <p>Limon con semilla</p>
+                            <p>$39.9</p>
+                        </div>
+                    </div>
+                    <div class="increase-amount">
+                        <img class="button-increase" src="../Icons-Images/icon-less.png" alt="">
+                        <p id="gram-product${id}">250gr</p>
+                        <img class="button-decrease" src="../Icons-Images/icon-sum.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <form action="" class="user-pay">
+                <label for="emailUser">Correo electrónico</label>
+                <input type="email" name="emailUser" id="emailUser" required> </input>
+                <br>
+                <label for="card-User">Información de la tarjeta
+                    <div class="container-cards">
+                        <img src="../Icons-Images/Visa.svg" alt="cards" class="card-pay">
+                        <img src="../Icons-Images/Mastercard.svg" alt="cards" class="card-pay">
+                        <img src="../Icons-Images/American Express.svg" alt="cards" class="card-pay">
+                        <img src="../Icons-Images/Discover.svg" alt="cards" class="card-pay selected">
+                    </div>
+                    <input type="number" name="card-User" id="card-User" placeholder="1234 1234 1234 1234">
+                </label>
+                <div class="number-card">
+                    <input type="datetime" name="" id="" placeholder="MM/YY">
+                    <input type="number" placeholder="CVC">
+                    <img src="../Icons-Images/CVC Card.svg" alt="card-cvc" class="card-cvc">
+                </div>
+                <label for="card-name-User" class="name-card-label">Nombre en la tarjeta</label>
+                <input type="number" name="card-name-User" id="card-name-User">
+                <button type="button" class="button-submit" data-bs-toggle="modal" data-bs-target="#exampleModal"><span>Pagar</span><p>$227.48</p></button>
+            </form>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div>
+                            <img src="../Icons-Images/Hands Buying.png" alt="">
+                        </div>
+                        <p>¡Gracias por tu compra!</p>
+                        <div class="modal-footer">
+                            <button type="button" class="button-add">Seguir comprando</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>

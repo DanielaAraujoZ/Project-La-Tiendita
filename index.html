@@ -11,33 +11,126 @@
 <body>
     <header>
         <div class="container-header">
-            <img src="./Icons-Images/Tiendita.png" alt="Tiendita-icon">
+            <img class="icon-tiendita" src="./Icons-Images/Tiendita.png" alt="Tiendita-icon">
             <div class="ubication-cart">
                 <button class="icon-ubication" type="button" data-bs-toggle="modal" data-bs-target="#ubicationModal">
                     <img src="./Icons-Images/Ubication-button.png" alt="Ubication-button">
-                    <span class="city"> México City Marriott Reforma Hotel...  </span>
+                    <span class="city"> México City Marriott Reforma Hotel </span>
                 </button>
-                <div class="container-shopping-cart">
-                    <img src="./Icons-Images/Shopping-cart-icon.svg" alt="">
+                <button class="container-shopping-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#shopping-cart" aria-controls="shopping-cart">
+                    <img src="./Icons-Images/Shopping-cart-icon.svg" alt="icon-shopping-cart">
                     <span>1</span>
+                </button>
+                <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="shopping-cart" aria-labelledby="shopping-cartLabel">
+                    <div class="offcanvas-header">
+                        <p class="deliver-in"> Entregar en:  <span class="offcanvas-title" id="shopping-cartLabel"></span> </p>
+                        <button type="button" class="button-close" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./Icons-Images/cancel.png" alt=""></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="shooping-cart-empty">
+                            <img src="./Icons-Images/empty-shopping-cart.png" alt="">
+                            <p>Tu canasta está vacía</p>
+                            <button type="button" class="button-add" id="add-products">Agregar productos</button>
+                        </div>
+                        <div class="products-list">
+                            <div class="product-item">
+                                <div class="item-image-text">
+                                    <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                                    <div class="item-text">
+                                        <p>Limon con semilla</p>
+                                        <p>$39.9</p>
+                                    </div>
+                                </div>
+                                <div class="increase-amount">
+                                    <img class="button-increase" src="./Icons-Images/icon-less.png" alt="">
+                                    <p id="gram-product${id}">250gr</p>
+                                    <img class="button-decrease" src="./Icons-Images/icon-sum.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="item-image-text">
+                                    <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                                    <div class="item-text">
+                                        <p>Limon con semilla</p>
+                                        <p>$39.9</p>
+                                    </div>
+                                </div>
+                                <div class="increase-amount">
+                                    <img class="button-increase" src="./Icons-Images/icon-less.png" alt="">
+                                    <p id="gram-product${id}">250gr</p>
+                                    <img class="button-decrease" src="./Icons-Images/icon-sum.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="item-image-text">
+                                    <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                                    <div class="item-text">
+                                        <p>Limon con semilla</p>
+                                        <p>$39.9</p>
+                                    </div>
+                                </div>
+                                <div class="increase-amount">
+                                    <img class="button-increase" src="./Icons-Images/icon-less.png" alt="">
+                                    <p id="gram-product${id}">250gr</p>
+                                    <img class="button-decrease" src="./Icons-Images/icon-sum.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="item-image-text">
+                                    <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                                    <div class="item-text">
+                                        <p>Limon con semilla</p>
+                                        <p>$39.9</p>
+                                    </div>
+                                </div>
+                                <div class="increase-amount">
+                                    <img class="button-increase" src="./Icons-Images/icon-less.png" alt="">
+                                    <p id="gram-product${id}">250gr</p>
+                                    <img class="button-decrease" src="./Icons-Images/icon-sum.png" alt="">
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="item-image-text">
+                                    <img src="https://i.ibb.co/0j7jp3w/Limon.png" alt="product">
+                                    <div class="item-text">
+                                        <p>Limon con semilla</p>
+                                        <p>$39.9</p>
+                                    </div>
+                                </div>
+                                <div class="increase-amount">
+                                    <img class="button-increase" src="./Icons-Images/icon-less.png" alt="">
+                                    <p id="gram-product${id}">250gr</p>
+                                    <img class="button-decrease" src="./Icons-Images/icon-sum.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-shopping-cart">
+                            <p class="empty-basket"> Vaciar canasta </p>
+                            <a href="/src/payPage.html">
+                                <div>6</div>
+                                <span class="go-to-pay">Ir a pagar</span>
+                                <span class="total-price">$227.48</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal fade" id="ubicationModal" tabindex="-1" aria-labelledby="ubicationModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-title">
-                            <button type="button" class="button-close" data-bs-dismiss="modal" aria-label="Close"><img src="./Icons-Images/cancel.png" alt=""></button>
+                            <button type="button" class="button-close" data-bs-dismiss="modal" id="closeModal" aria-label="Close"><img src="./Icons-Images/cancel.png" alt=""></button>
                             <p> ¿Dónde quieres recibir tu pedido? </p>
                         </div>
                         <div class="modal-body">
                             <p>Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección</p>
                             <img src="./Icons-Images/location.png" alt="location-city" class="icon-location">
-                            <select name="select-city" id="select-cities">
-                                <option value="value1">  México City Marriott Reforma Hotel</option>
+                            <select name="select-city" id="select-cities" class="select-cities">
+                                <option value="value1"> México City Marriott Reforma Hotel</option>
                                 <option value="value2">México City International Airport</option>
                                 <option value="value3">México City Mexico</option>
                             </select>
-                            <button class="button-add">Buscar</button>
+                            <button class="button-add" id="search-city">Buscar</button>
                         </div>
                     </div>
                 </div>
@@ -46,8 +139,12 @@
     </header>
     <main>
         <div class="container-banner">
-            <img src="./Icons-Images/banner.png" alt="banner">
+            <img class="image-banner" src="./Icons-Images/banner.png" alt="banner">
             <p>¡Adquiere todos tus productos favoritos al mejor precio!</p>
+            <div class="product-add">
+                <img src="./Icons-Images/check.png" alt="check">
+                <span>Producto añadido</span>
+            </div>
         </div>
         <div class="container-products">
             <div class="container-offers">

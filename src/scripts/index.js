@@ -51,36 +51,50 @@ function showModalItem(id, idModal, name, image, price, formatWeight, weight = '
     </div>`
 }
 
-async function showOffers() {
+async function showOffers(element) {
     const info = await dataAPI(APIOffers);
-    $('.products-offers').html(
+    $(`.${element}`).html(
         info.map(({ id, name, image, percentage, discountPrice, price, formatWeight, idModal }) => `
         <div class="product-offer">
             <p class="discount"> ${percentage}% dto</p>
             <div class="container-image"> <img src="${image}" alt="${name}"/> </div>
             <p class="price">$${price}/${formatWeight}<span class="price-discount">$${discountPrice}/${formatWeight}</span> </p>
             <p class="name-product">${name}</p>
-            <button class="button-add" type="button" data-bs-toggle="modal" data-bs-target="#${idModal}"> Agregar </button>
+            <button class="button-add" type="button" data-bs-toggle="modal" data-bs-target="#${idModal}" id="products-offers"> Agregar </button>
             ${showModalItem(id, idModal, name, image, price, formatWeight)}
         </div>
         `)
     )
 }
-showOffers()
+showOffers("products-offers")
 
-async function showPopular(){
+async function showPopular(element){
     const info = await dataAPI(APIPopular);
-    $('.products-popular').html(
+    $(`.${element}`).html(
         info.map(({ id, idModal, name, image, price, weight, pricePerGram, formatWeight, und}) => `
         <div class="product-popular">
             <img src="${image}" alt="${name}">
             <p class="price">$${price}</p>
             <p class="name-product">${name}</p>
             <p class="info-price">${weight}${formatWeight} <span> ($${pricePerGram}/${formatWeight}) </span></p>
-            <button class="button-add" type="button" data-bs-toggle="modal" data-bs-target="#${idModal}"> Agregar </button>
+            <button class="button-add" type="button" data-bs-toggle="modal" data-bs-target="#${idModal}" id="products-popular"> Agregar </button>
             ${showModalItem(id, idModal, name, image, price, und)}
         </div>
     `)
     )
 }
-showPopular()
+showPopular("products-popular");
+
+$('#search-city').on('click', () => {
+    $('.city').text($('#select-cities option:selected').html());
+    $('#shopping-cartLabel').text($('#select-cities option:selected').html());
+    $('#closeModal').trigger('click');
+})
+
+$(document).ready(()=> {
+    $('#shopping-cartLabel').text($('.city').text());
+})
+
+$('#add-products').on('click', () => {
+    $('.button-close').trigger('click');
+})
